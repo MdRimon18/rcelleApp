@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\rCellE\\rCellE\\rCellE.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "G:\\rCellE\\rCellE\\rCellE.Client\\obj\\Debug\\net8.0\\compressed\\ssx5fu7b8z.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "G:\\rCellE\\rCellE\\rCellE.Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\rCellE.Client.bundle.scp.css",
+      "PackagePath": "staticwebassets\\rCellE.Client.bundle.scp.css"
+    },
+    {
+      "Id": "G:\\rCellE\\rCellE\\rCellE.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "G:\\rCellE\\rCellE\\rCellE.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.rCellE.Client.props",
+      "PackagePath": "build\\rCellE.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.rCellE.Client.props",
+      "PackagePath": "buildMultiTargeting\\rCellE.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.rCellE.Client.props",
+      "PackagePath": "buildTransitive\\rCellE.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.rCellE.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

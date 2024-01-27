@@ -1,0 +1,124 @@
+﻿ @page "/validation_example"
+
+
+  <div class="card mb-3">
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Custom styles Example</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-67b4a380-de8f-4548-b870-977112d2555d" type="button" role="tab" aria-controls="dom-67b4a380-de8f-4548-b870-977112d2555d" aria-selected="true" id="tab-dom-67b4a380-de8f-4548-b870-977112d2555d">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-f92b703b-e418-495d-871c-dfdc65b85bc5" type="button" role="tab" aria-controls="dom-f92b703b-e418-495d-871c-dfdc65b85bc5" aria-selected="false" id="tab-dom-f92b703b-e418-495d-871c-dfdc65b85bc5">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-body-tertiary">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-67b4a380-de8f-4548-b870-977112d2555d" id="dom-67b4a380-de8f-4548-b870-977112d2555d">
+                  <form class="row g-3 needs-validation" novalidate="">
+                    <div class="col-md-4">
+                      <label class="form-label" for="validationCustom01">First name</label>
+                      <input class="form-control" id="validationCustom01" type="text" value="Mark" required="" />
+                      <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label" for="validationCustom02">Last name</label>
+                      <input class="form-control" id="validationCustom02" type="text" value="Otto" required="" />
+                      <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label" for="validationCustomUsername">Username</label>
+                      <div class="input-group has-validation"><span class="input-group-text" id="inputGroupPrepend">tst</span>
+                        <input class="form-control" id="validationCustomUsername" type="text" aria-describedby="inputGroupPrepend" required="" />
+                        <div class="invalid-feedback">Please choose a username.</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="validationCustom03">City</label>
+                      <input class="form-control" id="validationCustom03" type="text" required="" />
+                      <div class="invalid-feedback">Please provide a valid city.</div>
+                    </div>
+                    <div class="col-md-3">
+                      <label class="form-label" for="validationCustom04">State</label>
+                      <select class="form-select" id="validationCustom04" required="">
+                        <option selected="" disabled="" value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">Please select a valid state.</div>
+                    </div>
+                    <div class="col-md-3">
+                      <label class="form-label" for="validationCustom05">Zip</label>
+                      <input class="form-control" id="validationCustom05" type="text" required="" />
+                      <div class="invalid-feedback">Please provide a valid zip.</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" id="invalidCheck" type="checkbox" value="" required="" />
+                        <label class="form-check-label mb-0" for="invalidCheck">Agree to terms and conditions</label>
+                        <div class="invalid-feedback mt-0">You must agree before submitting.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-f92b703b-e418-495d-871c-dfdc65b85bc5" id="dom-f92b703b-e418-495d-871c-dfdc65b85bc5">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;form class=&quot;row g-3 needs-validation&quot; novalidate=&quot;&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;validationCustom01&quot;&gt;First name&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;validationCustom01&quot; type=&quot;text&quot; value=&quot;Mark&quot; required=&quot;&quot; /&gt;
+    &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;validationCustom02&quot;&gt;Last name&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;validationCustom02&quot; type=&quot;text&quot; value=&quot;Otto&quot; required=&quot;&quot; /&gt;
+    &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;validationCustomUsername&quot;&gt;Username&lt;/label&gt;
+    &lt;div class=&quot;input-group has-validation&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;inputGroupPrepend&quot;&gt;tst&lt;/span&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;validationCustomUsername&quot; type=&quot;text&quot; aria-describedby=&quot;inputGroupPrepend&quot; required=&quot;&quot; /&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please choose a username.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;validationCustom03&quot;&gt;City&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;validationCustom03&quot; type=&quot;text&quot; required=&quot;&quot; /&gt;
+    &lt;div class=&quot;invalid-feedback&quot;&gt;Please provide a valid city.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-3&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;validationCustom04&quot;&gt;State&lt;/label&gt;
+    &lt;select class=&quot;form-select&quot; id=&quot;validationCustom04&quot; required=&quot;&quot;&gt;
+      &lt;option selected=&quot;&quot; disabled=&quot;&quot; value=&quot;&quot;&gt;Choose...&lt;/option&gt;
+      &lt;option&gt;...&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;div class=&quot;invalid-feedback&quot;&gt;Please select a valid state.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-3&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;validationCustom05&quot;&gt;Zip&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;validationCustom05&quot; type=&quot;text&quot; required=&quot;&quot; /&gt;
+    &lt;div class=&quot;invalid-feedback&quot;&gt;Please provide a valid zip.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;div class=&quot;form-check&quot;&gt;
+      &lt;input class=&quot;form-check-input&quot; id=&quot;invalidCheck&quot; type=&quot;checkbox&quot; value=&quot;&quot; required=&quot;&quot; /&gt;
+      &lt;label class=&quot;form-check-label mb-0&quot; for=&quot;invalidCheck&quot;&gt;Agree to terms and conditions&lt;/label&gt;
+      &lt;div class=&quot;invalid-feedback mt-0&quot;&gt;You must agree before submitting.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit form&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+@code {
+
+}

@@ -1,0 +1,11 @@
+G:\rCellE\ServiceLayer\bin\Debug\net8.0\ServiceLayer.deps.json
+G:\rCellE\ServiceLayer\bin\Debug\net8.0\ServiceLayer.dll
+G:\rCellE\ServiceLayer\bin\Debug\net8.0\ServiceLayer.pdb
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.AssemblyInfoInputs.cache
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.AssemblyInfo.cs
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.csproj.CoreCompileInputs.cache
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.dll
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\refint\ServiceLayer.dll
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.pdb
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ref\ServiceLayer.dll
