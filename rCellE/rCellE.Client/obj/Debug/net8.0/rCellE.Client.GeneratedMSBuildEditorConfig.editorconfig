@@ -106,10 +106,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XFByb2R1Y3RFbnRyeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/rCellE/rCellE/rCellE.Client/Pages/Inventory/Unit.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XFVuaXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [G:/rCellE/rCellE/rCellE.Client/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -157,3 +153,7 @@ build_metadata.AdditionalFiles.CssScope = b-c0o6a5i8gj
 [G:/rCellE/rCellE/rCellE.Client/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-f4f6iwwks2
+
+[G:/rCellE/rCellE/rCellE.Client/Pages/Inventory/Unit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XFVuaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-231y9bfl38
