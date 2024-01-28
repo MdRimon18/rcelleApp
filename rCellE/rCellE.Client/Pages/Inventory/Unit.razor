@@ -1,4 +1,9 @@
 ﻿@page "/Unit"
+@using ServiceLayer.Model
+@inject HttpClient http
+@rendermode @(new InteractiveWebAssemblyRenderMode(prerender:false))
+
+
 <div class="form-group">
     <label for="name" class="label">Unit</label>
     <input name="name"  
@@ -12,5 +17,38 @@
 </div>
 
 @code {
+    private List<ProductUnit> ProductUnits = new List<ProductUnit>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(500);
+
+        await LoadProductUnits();
+    }
+
+    private async Task LoadProductUnits()
+    {    
+        var result = await http.GetFromJsonAsync<List<ProductUnit>>("https://localhost:7248/api/ProductUnits");
+        if (result is not null)
+            ProductUnits = result;
+    }
+
+    private async Task AddProductUnit()
+    {
+        var newProductUnit = new ProductUnit
+            {
+                ProductUnitKey = Guid.NewGuid(),
+                ProductUnitName = "New Product Unit"
+            };
+
+        await http.PostAsJsonAsync("api/productunits", newProductUnit);
+        await LoadProductUnits();
+    }
+
+    private async void DeleteProductUnit(int id)
+    {
+        await http.DeleteAsync($"api/productunits/{id}");
+        await LoadProductUnits();
+    }
 
 }

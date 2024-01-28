@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using rCellE.Client.Pages;
+using rCellE.Client.Pages.Inventory;
 using rCellE.Components;
 using rCellE.Components.Account;
 using rCellE.Data;
+using ServiceLayer.DataAccessLayer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,9 @@ builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddScoped<AuthenticationStateProvider, PersistingRevalidatingAuthenticationStateProvider>();
+
+builder.Services.AddScoped<ProductUnitRepository>();
+
 
 builder.Services.AddAuthentication(options =>
     {
@@ -36,7 +41,9 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
     .AddDefaultTokenProviders();
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
-
+builder.Services.AddControllers(); // Ensure controllers are registered
+//builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7248/api/\"") });
+builder.Services.AddScoped(sp=>new HttpClient());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -60,9 +67,11 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(Counter).Assembly);
+    .AddAdditionalAssemblies(typeof(Counter).Assembly)
+     //.AddAdditionalAssemblies(typeof(Unit).Assembly)
+     ;
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();
-
+app.MapControllers(); // Map controllers to endpoints
 app.Run();

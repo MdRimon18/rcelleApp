@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rCellE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c111371ab70361eee3f5f609b7912fc1152efd2c")]
 [assembly: System.Reflection.AssemblyProductAttribute("rCellE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rCellE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
