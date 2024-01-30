@@ -4,12 +4,17 @@
         class="btn">
     <i class="fas fa-arrow-left"></i>
 </button>
-<div class="row">
+
+<div class="card mb-3">
+  <div class="m-5">
+
+
+  <div class="row">
     <div class="col-sm-3 animated-div">
         <div class="form-group">
             <label for="catagory" class="label text-dark">Product Category</label><span class="text-danger">*</span>
             <select required name="catagory" class="form-control form-control-sm form-rounded">
-                <option value="">Select Product Category</option>
+                <option value="">Select Product Category</option> 
                 <!-- Options for productCategories -->
             </select>
             <div class="text-left text-danger">
@@ -44,7 +49,7 @@
             <input readonly name="serialNumber" type="text" class="form-control form-control-sm form-rounded" placeholder="Serial Number" required>
         </div>
     </div>
-</div>
+  </div>
 
 <div class="row">
     <div class="col-sm-3 animated-div">
@@ -276,10 +281,17 @@
         <div class="form-group">
             <label for="shippingDay" class="label text-dark">Shipping Day</label>
             <textarea name="shippingDetails" type="text" class="form-control form-control-sm form-rounded" id="shippingDetails" placeholder="Shipping Day" cols="50" rows="2"></textarea>
-        </div>
-    </div>
+        </div>          
+    </div>55
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary btn-sm">Save</button>
+                <button class="btn btn-warning btn-sm">Update</button>
+                <button class="btn btn-info btn-sm">Refresh</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+            </div>
+   </div>
 </div>
-
+</div>
 @code {
 
 }
