@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/rCellE/FileContentIndex/034fadfe-2620-4a75-8c66-791e4d608ffa.vsidx
+/.vs/rCellE/FileContentIndex/4a72d29b-5f64-41aa-8b92-67c5ba18b9dc.vsidx
+/.vs/rCellE/FileContentIndex/b714a62f-a2c9-4a83-a46d-f219cc2618dc.vsidx
+/Local Disk (F) - Shortcut.lnk
+/.vs/rCellE/FileContentIndex/19b6ddf7-9705-4c83-aeca-078e61710c81.vsidx
+/.vs/rCellE/FileContentIndex/a105ea82-e0ed-44f0-ba64-77ca6314e0cc.vsidx
+/rCellE/rCellE/obj/Debug/net8.0/rCellE.sourcelink.json
+/rCellE/rCellE.Client/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.0.vaqsp14d09.js
+/rCellE/rCellE.Client/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.8.0.0.lje3rrhb93.js.gz
+/rCellE/rCellE.Client/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.8.0.0.lje3rrhb93.js
+/rCellE/rCellE.Client/obj/Debug/net8.0/compressed
+/rCellE/rCellE.Client/obj/Debug/net8.0
+/rCellE/rCellE.Client/bin/Debug/net8.0/wwwroot/_framework
