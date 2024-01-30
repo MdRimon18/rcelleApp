@@ -9,3 +9,5 @@ G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.dll
 G:\rCellE\ServiceLayer\obj\Debug\net8.0\refint\ServiceLayer.dll
 G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.pdb
 G:\rCellE\ServiceLayer\obj\Debug\net8.0\ref\ServiceLayer.dll
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.sourcelink.json
+G:\rCellE\ServiceLayer\obj\Debug\net8.0\ServiceLayer.csproj.AssemblyReference.cache

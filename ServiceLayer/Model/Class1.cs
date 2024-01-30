@@ -1,4 +1,4 @@
-﻿namespace ServiceLayer
+﻿namespace ServiceLayer.Model
 {
     public class Class1
     {
