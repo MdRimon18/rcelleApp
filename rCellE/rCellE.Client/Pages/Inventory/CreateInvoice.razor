@@ -1,0 +1,87 @@
+﻿@page "/create_invoice"
+
+<button
+        class="btn">
+    <i class="fas fa-arrow-left"></i>
+</button>
+
+<div class="card mb-3">
+  <div class="m-5">
+
+
+  <div class="row">
+    <div class="col-sm-3 animated-div">
+        <div class="form-group">
+            <label for="customerMobileNo" class="label text-dark">Customer Mobile No</label><span class="text-danger">*</span>
+            <input readonly name="customerMobileNo" type="text" class="form-control form-control-sm form-rounded" placeholder="customer mobile no" required>
+        </div>
+    </div>
+
+    <div class="col-sm-3 animated-div">
+        <div class="form-group">
+                    <label class="label text-dark">Date</label>
+                    <input class="form-control form-control-sm form-rounded"
+                           type="date"
+                           name="entryDate"
+                           placeholder="Date">
+                </div>
+            </div>
+
+    <div class="col-sm-3 animated-div">
+        <div class="form-group">
+            <label for="name" class="label text-dark">Product Name</label>
+            <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="Product name" required>
+           
+        </div>
+    </div>
+            <div class="col-sm-3 animated-div">
+                <div class="form-group">
+                    <label for="salesBy" class="label text-dark">Sales By</label>
+                    <input readonly name="salesBy" type="text" class="form-control form-control-sm form-rounded" placeholder="sales by" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 animated-div">
+                    <div class="form-group">
+                        <label for="categorySelect" class="label text-dark">Category</label><span class="text-danger">*</span>
+                        <select required name="catagorySelect" class="form-control form-control-sm form-rounded">
+                            <option value="">category select</option>
+                            <!-- Options for productCategories -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 animated-div">
+                    <div class="form-group">
+                        <label for="subCategory" class="label text-dark">Sub Category</label>
+                        <input name="subCategory" type="text" class="form-control form-control-sm form-rounded" placeholder="sub category"required>
+                        
+                    </div>
+                </div>
+
+                <div class="col-sm-3 animated-div">
+                    <div class="form-group">
+                        <label for="chooseProduct" class="label text-dark">Choose Product</label><span class="text-danger">*</span>
+                        <input name="chooseProduct" type="text" class="form-control form-control-sm form-rounded" placeholder="Choose Product" required>
+                       
+                    </div>
+                </div>
+
+                <div class="col-sm-3 animated-div">
+                    <div class="form-group">
+                        <label for="chooseSerialNumber" class="label text-dark">Choose Serial No</label><span class="text-danger">*</span>
+                        <input name="chooseSerialNumber" type="text" class="form-control form-control-sm form-rounded" placeholder="Choose Serial No" required>
+                        
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+ </div>
+ </div>
+
+@code {
+
+}
