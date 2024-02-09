@@ -1,56 +1,73 @@
 ﻿@page "/add_suppiler"
 
-<button class="btn">
-    <i class="fas fa-arrow-left"></i>
-</button>
+
 <div class="card mb-3">
-  <div class="m-5">
-        <h3>Supplier Profile Entry</h3>
+        <div class="card-header">
+            <h5 class="mb-0" data-anchor="data-anchor">
+                <i class="fas fa-arrow-left"></i>
+            Supplier Profile Entry
+            </h5>
+
+    </div>
+<div class="card-body bg-body-tertiary">
+        <div class="row">
         <div class="col-sm-5 animated-div">
             <div class="form-group">
-                <label for="addSupplier" class="label text-dark">Name</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="name" required>
-
-                <!-- Options for productSubCategories -->
+                    <label for="addSupplier" class="label text-dark">Name<span class="error-star">*</span></label>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="name" required>
+                    <div class="text-left invalid-message-color">
+                        Name Is Required!
+                    </div>
+               
             </div>
         </div>
         <div class="col-sm-5 animated-div">
             <div class="form-group">
-                <label for="addSupplier" class="label text-dark">Country</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="Select Country Name" required>
-
-                <!-- Options for productSubCategories -->
+                    <label for="addSupplier" class="label text-dark">Country <span class="error-star">*</span></label>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="Select Country Name" required>
+                    <div class="text-left invalid-message-color">
+                         Country Name Is Required!
+                    </div>
                 </div>
             </div>
         <div class="col-sm-5 animated-div">
             <div class="form-group">
-                <label for="addSupplier" class="label text-dark">State Name</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="Give your state Name" required>
-
+                    <label for="addSupplier" class="label text-dark">State Name <span class="error-star">*</span></label>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="Give your state Name" required>
+                    <div class="text-left invalid-message-color">
+                       State Name Is Required!
+                    </div>
         </div>
     </div>
      <div class="col-sm-5 animated-div">
             <div class="form-group">
-                <label for="addSupplier" class="label text-dark">Organization Name </label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="Organaization Name" required>
+                    <label for="addSupplier" class="label text-dark">Organization Name<span class="error-star">*</span> </label>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="Organaization Name" required>
+                    <div class="text-left invalid-message-color">
+                         Organization Name Is Required!
+                    </div>
                 </div>
            </div>
         <div class="col-sm-5 animated-div">
             <div class="form-group">
-                <label for="addSupplier" class="label text-dark">Select Type</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="Select Type" required>
-            </div>
+                    <label for="addSupplier" class="label text-dark">Select Type <span class="error-star">*</span></label>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="Select Type" required>
+                    <div class="text-left invalid-message-color">
+                        Select Type Is Required!
+                    </div>
+                </div>
         </div>
         <div class="col-sm-5 animated-div">
             <div class="form-group">
                 <label for="addSupplier" class="label text-dark">Supplier Address Line One</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="supplier adress line one" required>
-            </div>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded " placeholder="supplier adress line one" required>
+            
+                </div>
         </div>
         <div class="col-sm-5 animated-div">
             <div class="form-group">
                 <label for="addSupplier" class="label text-dark">Supplier Address Line two</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="supplier address line two" required>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="supplier address line two" required>
             </div>
         </div>
         <div class="col-sm-5 animated-div">
@@ -62,28 +79,37 @@
         
         <div class="col-sm-5 animated-div">
             <div class="form-group">
-                <label for="addSupplier" class="label text-dark">Email</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="write email" required>
-            </div>
+                    <label for="addSupplier" class="label text-dark">Email <span class="error-star">*</span></label>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="write email" required>
+                    <div class="text-left invalid-message-color">
+                        Email Is Required!
+                    </div>
+                </div>
         </div>
         <div class="col-sm-5 animated-div">
             <div class="form-group">
-                <label for="addSupplier" class="label text-dark">Mobile No</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="mobile no" required>
-            </div>
+                    <label for="addSupplier" class="label text-dark">Mobile No <span class="error-star">*</span></label>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="mobile no" required>
+                    <div class="text-left invalid-message-color">
+                        Mobile No Is Required!
+                    </div>
+                </div>
             </div>
         <div class="col-sm-5 animated-div">
             <div class="form-group">
-                <label for="addSupplier" class="label text-dark">Image</label>
-                <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="image link" required>
-            </div>
+                    <label for="addSupplier" class="label text-dark">Image <span class="error-star">*</span></label>
+                    <input name="name" type="text" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="image link" required>
+                    <div class="text-left invalid-message-color">
+                        Image Is Required!
+                    </div>
+                </div>
         </div>
     <div>
-    <button class="btn btn-primary btn-sm">Save</button>
+                <button class="btn btn-primary btn-sm mt-2">Save</button>
 </div>
     </div>
 </div>
- 
+ </div>
 
 
 @code {

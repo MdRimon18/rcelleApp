@@ -39,9 +39,9 @@
 
             <div class="col-sm-3 animated-div">
                 <div class="form-group">
-                    <label for="name" class="label text-dark">Product Name</label>
-                    <input name="name" type="text" class="form-control form-control-sm form-rounded" placeholder="Product Name" required>
-                    <div class="text-left text-danger">
+                    <label for="name" class="label text-dark">Product Name <span class="error-star">*</span></label>
+                    <input name="name" type="text" class=" form-control form-control-sm form-rounded invalid-border-input" placeholder="Product Name" required>
+                    <div class="text-left invalid-message-color">
                         Product Name Required!
                     </div>
                 </div>
@@ -59,8 +59,8 @@
             <div class="col-sm-3 animated-div">
                 <div class="form-group">
                     <label for="quantity" class="label text-dark">Opening Quantity</label><span class="error-star">*</span>
-                    <input name="quantity" type="number" class="form-control form-control-sm form-rounded" placeholder="Opening Quantity" required>
-                    <div class="text-left text-danger">
+                    <input name="quantity" type="number" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="Opening Quantity" required>
+                    <div class="text-left invalid-message-color">
                         Opening Quantity Required!
                     </div>
                 </div>
@@ -79,8 +79,8 @@
             <div class="col-sm-3 animated-div">
                 <div class="form-group">
                     <label for="productBuyingPrice" class="label text-dark">Buying Price</label><span class="error-star">*</span>
-                    <input name="productBuyingPrice" type="number" class="form-control form-control-sm form-rounded" placeholder="Buying Price" required>
-                    <div class="text-left text-danger">
+                    <input name="productBuyingPrice" type="number" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="Buying Price" required>
+                    <div class="text-left invalid-message-color">
                         Buying Price Required!
                     </div>
                 </div>
@@ -89,8 +89,8 @@
             <div class="col-sm-3 animated-div">
                 <div class="form-group">
                     <label for="cost" class="label text-dark">Selling Price</label><span class="error-star">*</span>
-                    <input name="cost" type="number" class="form-control form-control-sm form-rounded" placeholder="Selling Price" required>
-                    <div class="text-left text-danger">
+                    <input name="cost" type="number" class="form-control form-control-sm form-rounded invalid-border-input" placeholder="Selling Price" required>
+                    <div class="text-left invalid-message-color">
                         Selling Price Required!
                     </div>
                 </div>
@@ -101,11 +101,11 @@
             <div class="col-sm-3 animated-div">
                 <div class="form-group">
                     <label class="label text-dark">Unit Type</label><span class="error-star">*</span>
-                    <select name="unit" required class="form-control form-control-sm form-rounded">
+                    <select name="unit" required class="form-control form-control-sm form-rounded invalid-border-input">
                         <option value=''>Unit Type Select</option>
                         <!-- Options for UnitList -->
                     </select>
-                    <div class="text-left text-danger">
+                    <div class="text-left invalid-message-color">
                         Unit Type Required!
                     </div>
                 </div>
