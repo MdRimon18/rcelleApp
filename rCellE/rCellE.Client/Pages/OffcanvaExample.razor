@@ -1,0 +1,76 @@
+﻿@page "/offcanva_example"
+ 
+<div class="card mb-3">
+    <div class="card-header">
+        <div class="row flex-between-end">
+            <div class="col-auto align-self-center">
+                <h5 class="mb-0" data-anchor="data-anchor">Placement</h5>
+                <div class="mt-2">
+                    <p class='mb-2'>There’s no default placement for offcanvas components, so you must add one of the modifier classes below;</p>
+                    <ul>
+                        <li><code>.offcanvas-top</code> places offcanvas on the top of the viewport</li>
+                        <li><code>.offcanvas-end</code> places offcanvas on the right of the viewport</li>
+                        <li><code>.offcanvas-start</code> places offcanvas on the left of the viewport (shown above)</li>
+                        <li><code>.offcanvas-bottom</code> places offcanvas on the bottom of the viewport</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-auto ms-auto">
+                <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-d637b145-c2d6-4cf3-828b-f4141530fd67" type="button" role="tab" aria-controls="dom-d637b145-c2d6-4cf3-828b-f4141530fd67" aria-selected="true" id="tab-dom-d637b145-c2d6-4cf3-828b-f4141530fd67">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-31ca06d8-5394-456a-aeef-4e6d00fe0d48" type="button" role="tab" aria-controls="dom-31ca06d8-5394-456a-aeef-4e6d00fe0d48" aria-selected="false" id="tab-dom-31ca06d8-5394-456a-aeef-4e6d00fe0d48">Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body bg-body-tertiary">
+        <div class="tab-content">
+            <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-d637b145-c2d6-4cf3-828b-f4141530fd67" id="dom-d637b145-c2d6-4cf3-828b-f4141530fd67">
+                <!-- Top Offcanvas-->
+
+                <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Top Offcanvas</button>
+                <div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1" aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                        <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">...</div>
+                </div>
+                <!-- Right Offcanvas-->
+
+                <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Right Offcanvas</button>
+                <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">...</div>
+                </div>
+                <!-- Left Offcanvas-->
+
+                <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Left Offcanvas</button>
+                <div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1" aria-labelledby="offcanvasLeftLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasLeftLabel">Offcanvas left</h5>
+                        <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">...</div>
+                </div>
+                <!-- Bottom Offcanvas-->
+
+                <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Bottom offcanvas</button>
+                <div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                        <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">...</div>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+@code {
+
+}
