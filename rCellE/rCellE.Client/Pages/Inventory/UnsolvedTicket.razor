@@ -147,11 +147,12 @@
                     <table class="table table-sm mb-0 fs-10 table-view-tickets">
                         <thead class="bg-body-tertiary">
                             <tr>
-                                <th class="py-2 fs-9 pe-2" style="width: 28px;">
+                                @* <th class="py-2 fs-9 pe-2" style="width: 28px;">
                                     <div class="form-check d-flex align-items-center">
                                       Action  <input class="form-check-input" id="checkbox-bulk-table-tickets-select" type="checkbox" data-bulk-select='{"body":"table-ticket-body","actions":"table-ticket-actions","replacedElement":"table-ticket-replace-element"}' />
                                     </div>
-                                </th>
+                                </th> *@
+                                <th class="text-800 sort align-middle ps-4" data-sort="client">Action</th>
                                 <th class="text-800 sort align-middle ps-2" data-sort="client">Client</th>
                                 <th class="text-800 sort align-middle" data-sort="subject" style="min-width:15.625rem">Subject</th>
                                 <th class="text-800 sort align-middle" data-sort="status">Status</th>
@@ -164,9 +165,8 @@
                             <tr>
                                 <td class="align-middle fs-9 py-3">
                                     <div class="form-check mb-0">
-
                                         <input class="form-check-input" type="checkbox" id="table-view-tickets-0" data-bulk-select-row="data-bulk-select-row" />
-                                        <a class="btn btn-falcon-default btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="fas fa-external-link-alt" data-fa-transform="shrink-3"></span><span class="d-none d-sm-inline-block d-xl-none d-xxl-inline-block ms-1"></span></a>
+                                        <a class="btn btn-falcon-default btn-sm " data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="fas fa-external-link-alt" data-fa-transform="shrink-3"></span><span class="d-none d-sm-inline-block d-xl-none d-xxl-inline-block ms-1"></span></a>
                                     </div>
                                 </td>
                                 <td class="align-middle client white-space-nowrap pe-3 pe-xxl-4 ps-2">

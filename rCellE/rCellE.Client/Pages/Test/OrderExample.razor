@@ -1,0 +1,142 @@
+﻿@page "/order_example"
+
+<PageTitle>Validation</PageTitle>
+
+<body>
+
+                                    <!-- ===============================================-->
+                                                      <!--Start of Form-->
+                                    <!-- ===============================================-->
+    <div class="card mb-3">
+        <div class="card-header">
+            <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                    <h5 class="mb-0" data-anchor="data-anchor">Order Example</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                    <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                        <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-67b4a380-de8f-4548-b870-977112d2555d" type="button" role="tab" aria-controls="dom-67b4a380-de8f-4548-b870-977112d2555d" aria-selected="true" id="tab-dom-67b4a380-de8f-4548-b870-977112d2555d">Preview</button>
+                        <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-f92b703b-e418-495d-871c-dfdc65b85bc5" type="button" role="tab" aria-controls="dom-f92b703b-e418-495d-871c-dfdc65b85bc5" aria-selected="false" id="tab-dom-f92b703b-e418-495d-871c-dfdc65b85bc5">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body bg-body-tertiary">
+            <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-67b4a380-de8f-4548-b870-977112d2555d" id="dom-67b4a380-de8f-4548-b870-977112d2555d">
+                    <form class="row g-3 needs-validation" novalidate="">
+                        <div class="col-md-3">
+                            <label class="form-label" for="OrderNo">Order No</label>
+                            <input class="form-control form-control-sm" id="OrderNo" type="text" value="" placeholder="OrderNo" required="" />
+                            <div class="invalid-feedback">Please provide a valid Order No.</div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label" for="CompanyName">Company Name</label>
+                            <select class="form-select form-select-sm" id="CompanyName" required="">
+                                <option selected="" disabled="" value="">Select Company</option>
+                                <option value="1">Company-01</option>
+                                <option value="2">Company-02</option>
+                                <option value="3">Company-03</option>
+                            </select>
+                            <div class="invalid-feedback">Please provide a valid Company.</div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label" for="datepickerVal"> Date</label>
+                            <input class="form-control datetimepicker form-control-sm" id="datepickerVal" type="text" placeholder="dd/mm/yy" required="required" data-options='{"disableMobile":true,"allowInput":true}' />
+                            <div class="invalid-feedback">This field is required</div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label" for="UploadImage">Upload File</label>
+                            <input class="form-control form-control-sm" id="UploadImage" type="file" required="" />
+                            <div class="invalid-feedback">Please Upload File.</div>
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label" for="Message">Message</label>
+                            <textarea class="form-control" id="Message" rows="2" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" id="invalidCheck" type="checkbox" value="" required="" />
+                                <label class="form-check-label mb-0" for="invalidCheck">Agree to terms and conditions</label>
+                                <div class="invalid-feedback mt-0">You must agree before submitting.</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary btn-sm">Save</button>
+                <button class="btn btn-warning btn-sm">Update</button>
+                <button class="btn btn-info btn-sm">Search</button>
+                <button class="btn btn-success btn-sm">Reference</button>
+            </div>
+        </div>
+    </div>
+
+                                        <!-- ===============================================-->
+                                                          <!--End of Form-->
+                                        <!-- ===============================================-->
+
+
+                                        <!-- ===============================================-->
+                                                         <!--Start of Table-->
+                                        <!-- ===============================================-->
+
+    <div class="card mb-3">
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-md-3">
+                    <select class="form-select form-select-sm mb-3" aria-label="Bulk actions" data-list-filter="data-list-filter">
+                        <option selected="" value="">Select Search Option</option>
+                        <option value="OrderNo">Order No</option>
+                        <option value="CompanyName">Company Name</option>
+                        <option value="Date">Date</option>
+                        <option value="t'sTrue">It's True</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm shadow-none search" type="search" placeholder="Search..." aria-label="search" />
+                        <div class="input-group-text bg-transparent"><span class="fa fa-search fs-10 text-600"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="table-responsive scrollbar">
+          <table class="table table-bordered table-striped fs-10 mb-0">
+             <thead class="bg-200">
+                <tr>
+                   <th class="text-900 sort" data-sort="Button">Button</th>
+                   <th class="text-900 sort" data-sort="OrderNo">Order No</th>
+                   <th class="text-900 sort" data-sort="CompanyName">Company Name</th>
+                   <th class="text-900 sort" data-sort="Date">Date</th>
+                   <th class="text-900 sort" data-sort="UploadFile">Upload File</th>
+                   <th class="text-900 sort" data-sort="It'sTrue">It's True</th>
+                </tr>
+             </thead>
+             <tbody class="list">
+                <tr>
+                   <td class="button">
+                      <button class="btn btn-success btn-sm">Edit</button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                   </td>
+                   <td class=""></td>
+                   <td class=""></td>
+                   <td class=""></td>
+                   <td class=""></td>
+                   <td class=""></td>
+                </tr>
+             </tbody>
+          </table>
+       </div>
+    </div>
+                                <!-- ===============================================-->
+                                                   <!--End of Table-->
+                                <!-- ===============================================-->
+</body>
+
+@code {
+
+}

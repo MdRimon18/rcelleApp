@@ -1,0 +1,131 @@
+﻿@page "/sales_return"
+
+
+<body>
+
+    <!-- ===============================================-->
+    <!--Start of Form-->
+    <!-- ===============================================-->
+    <div class="card mb-3">
+        <div class="card-header">
+            <div class="row flex-between-end">
+                <div class="col-auto align-self-start">
+                    <button class="btn btn-link float-start">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <h5 class="mb-0" data-anchor="data-anchor">Sales Return</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body bg-body-tertiary">
+            <div class="row gx-5">
+                <div class="col-sm-10 col-md-10 col-lg-10 animated-div">
+                    <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-67b4a380-de8f-4548-b870-977112d2555d" id="dom-67b4a380-de8f-4548-b870-977112d2555d">
+                        <form class="row g-3 needs-validation" novalidate="">
+                            <div class="col-md-3">
+                                <label class="form-label" for="CustomerNumber">Customer Number</label>
+                                <input class="form-control form-control-sm rounded-pill" id="CustomerNumber" type="tel" value="" placeholder="Mobile Number" required="" />
+                                <div class="invalid-feedback">Please provide Phone Number.</div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="ClientName">Client Name</label>
+                                <input class="form-control form-control-sm rounded-pill" id="ClientName" type="text" value="" placeholder="Client Name" required="" />
+                                <div class="invalid-feedback">Please provide a Client Name.</div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="datepickerVal">Entry Date</label>
+                                <input class="form-control datetimepicker form-control-sm rounded-pill" id="datepickerVal" type="date" placeholder="dd/mm/yy" required="required" data-options='{"disableMobile":true,"allowInput":true}' />
+                                <div class="invalid-feedback">This field is required</div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="MemoNo">Memo No</label>
+                                <input class="form-control form-control-sm rounded-pill" id="MemoNo" type="text" value="" placeholder="Memo No" required="" />
+                                <div class="invalid-feedback">Please provide Memo No.</div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="ReturnBy">Return By</label>
+                                <input class="form-control form-control-sm rounded-pill" id="ReturnBy" type="text" value="" placeholder="Return By" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="Category">Category</label>
+                                <select class="form-select form-select-sm rounded-pill" id="Category" required="">
+                                    <option selected="" disabled="" value="">Select Category</option>
+                                    <option value="1">Category-01</option>
+                                    <option value="2">Category-02</option>
+                                    <option value="3">Category-03</option>
+                                </select>
+                                <div class="invalid-feedback">Please provide Category.</div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="Sub-Category">Sub-Category</label>
+                                <select class="form-select form-select-sm rounded-pill" id="Sub-Category">
+                                    <option selected="" disabled="" value="">Select Sub-Category</option>
+                                    <option value="1">Sub-Category-01</option>
+                                    <option value="2">Sub-Category-02</option>
+                                    <option value="3">Sub-Category-03</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="ChooseProduct">Choose Product</label>
+                                <input class="form-control form-control-sm rounded-pill" id="ChooseProduct" type="text" required="" />
+                                <div class="invalid-feedback">Please Choose Product.</div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="ChooseSerialNumber">Choose Serial Number</label>
+                                <input class="form-control form-control-sm rounded-pill" id="ChooseSerialNumber" type="text" required="" />
+                                <div class="invalid-feedback">Please Choose Serial Number.</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2  mb-3">
+                    <mat-card class="card bg-primary text-white">
+                        <mat-card-content class="m-3">
+                            <div class="col-md-12">
+                                <label class="">Total</label>
+                                <input class="form-control form-control-sm rounded-pill" id="Total" type="number" value="" readonly />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="">Vat</label>
+                                <input class="form-control form-control-sm rounded-pill" id="Vat" type="number" value="" readonly />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="">Discount</label>
+                                <input class="form-control form-control-sm rounded-pill" id="Discount" type="number" value="" readonly />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="">Additional Discount</label>
+                                <input class="form-control form-control-sm rounded-pill" id="AdditionalDiscount" type="number" value="" />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="">Total Payable</label>
+                                <input class="form-control form-control-sm rounded-pill" id="TotalPayable" type="number" value="" readonly />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="">Receive</label>
+                                <input class="form-control form-control-sm rounded-pill" id="Receive" type="number" value="" />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="">Current Due</label>
+                                <input class="form-control form-control-sm rounded-pill" id="CurrentDue" type="number" value="" />
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary btn-sm">Save</button>
+                <button class="btn btn-success btn-sm">Reference</button>
+                <button class="btn btn-warning btn-sm">Print Invoice</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+@code {
+
+}
